@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst Assignment</title>
+    <script src="https://kit.fontawesome.com/0c4692b417.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'custom-bg-color': '#F85559',
 
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         body{
             font-family: 'Lato', sans-serif;
@@ -17,7 +31,38 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="max-w-7xl mx-auto mt-12">
+        <nav class="bg-custom-bg-color rounded-full mb-14 px-12 py-8 flex justify-between items-center">
+            <div>
+                <ul class="flex justify-between items-center gap-7 font-normal text-white text-lg">
+                    <li>
+                        <a href="">Home</a> 
+                    </li>
+                    <li>
+                        <a href="">About Us </a> 
+                    </li>
+                    <li>
+                        <a href="">Shop</a>
+                    </li>
+                    <li>
+                        <a href="">All Fruits</a>
+                    </li>
+                </ul> 
+            </div>
+            <div class="flex gap-2 align-items justify-center">
+                
+                    <img class="w-10" src="images/logo.png" alt="">
+                    <p class="text-3xl text-white font-bold">
+                        <a href="">Fruit Burst</a>
+                    </p>
+                    
+            </div>
+            <div>
+                <input type="text" placeholder="Search here" class=" rounded-full input-sm max-w-xs input-bordered w-full relative" />
+                <i class="fa-solid fa-magnifying-glass absolute right-48 top-24"></i>
+            </div>
+           
+        </nav>
         
     </header>
     <main>
